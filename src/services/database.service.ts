@@ -1,8 +1,8 @@
 import * as mongoDB from 'mongodb';
 
-const MONGODB_URL = process.env.MONGODB_URL;
-const MONGODB_NAME = process.env.MONGODB_NAME;
-const MONGODB_COLLECTION_NAME = process.env.MONGODB_COLLECTION_NAME;
+const MONGODB_URL = process.env.MONGODB_URL ?? '';
+const MONGODB_NAME = process.env.MONGODB_NAME ?? '';
+const MONGODB_COLLECTION_NAME = process.env.MONGODB_COLLECTION_NAME ?? '';
 
 export const collections: { metadatas?: mongoDB.Collection } = {};
 
