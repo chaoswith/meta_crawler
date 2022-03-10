@@ -13,20 +13,19 @@ Docker
 Github Action   
 Mongodb   
 
-서버 포트는. 기본 3000으로 구성되어 있습니다.
-git push 명령어 사용시 github action에 의해 푸쉬된 코드가 eslint/prettier의 룰을 깨뜨리지 않는 것을 확인하고,    
-빌드가 잘 되는 것을. 확인합니다.
+서버 포트는. 기본 3000으로 구성되어 있습니다.   
+git push 명령어 사용시 github action에 의해 푸쉬된 코드가 eslint/prettier의 룰을 깨뜨리지 않는 것을 확인하고, 빌드가 잘 되는 것을 확인합니다.
 
-## [](https://github.com/bbc/REST-API-example/blob/master/README.md#도커빌드)도커빌드
-
-Dockerfile FROM node:17 다음 줄에 다음과 같은 몽고db 환경변수를 세팅합니다.
-
-ENV MONGODB_URL = mongodb+srv://chaoswith:XXXXXXXX@cluster0.h83m4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-ENV MONGODB_NAME = test
-ENV MONGODB_COLLECTION_NAME = devices
-#
 
 ## 도커 빌드
+Dockerfile FROM node:17 다음 줄에 다음과 같은 몽고db 환경변수를 세팅합니다.
+
+ENV MONGODB_URL = mongodb+srv://chaoswith:XXXXXXXX@cluster0.h83m4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority   
+ENV MONGODB_NAME = test   
+ENV MONGODB_COLLECTION_NAME = devices   
+
+다음을 실행합니다.
+
 ```
 docker build -f Dockerfile -t meta_crawler .
 ```
