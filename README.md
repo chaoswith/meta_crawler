@@ -1,20 +1,21 @@
 
 # Meta-Crawler REST API 
 
-URL을 넘겨주면 URL에 해당하는 메타정보를 크롤링하여 mongodb에 데이터를 쌓고 
-저장된 메타 정보를 넘겨주는 api 입니다.
-도커로 빌드 및 실행이 가능합니다.
+URL을 넘겨주면 URL에 해당하는 메타정보를 크롤링하여 mongodb에 데이터를 쌓고   
+저장된 메타 정보를 넘겨주는 api 입니다.   
+도커로 빌드 및 실행이 가능합니다.   
 
-Nodejs 17.6
-Typescript 
-Eslint 
-Prettier
-Docker
-Github Action
-Mongodb
+Nodejs 17.6  
+Typescript    
+Eslint    
+Prettier   
+Docker   
+Github Action   
+Mongodb   
 
-서버 포트는 기본 3000으로 구성되어 있습니다.
-git push 명령어 사용시 github action에 의해 푸쉬된 코드가 eslint/prettier의 룰을 깨뜨리지 않는 것을 확인하고, 빌드가 잘 되는 것을 확인합니다.
+서버 포트는. 기본 3000으로 구성되어 있습니다.
+git push 명령어 사용시 github action에 의해 푸쉬된 코드가 eslint/prettier의 룰을 깨뜨리지 않는 것을 확인하고,    
+빌드가 잘 되는 것을. 확인합니다.
 
 ## [](https://github.com/bbc/REST-API-example/blob/master/README.md#도커빌드)도커빌드
 
